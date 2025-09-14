@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <title>🎲 Random Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">🎲 Random Generator</h1>
+
+    <label>
+      Tilni tanlang:
+      <select id="lang">
+        <option value="uz">O‘zbekcha</option>
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh">中文</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </label>
+
+    <label id="label-min">Minimal son: <input type="number" id="min" value="1" /></label>
+    <label id="label-max">Maksimal son: <input type="number" id="max" value="100000" /></label>
+    <label id="label-count">Nechta son kerak: <input type="number" id="count" value="10" /></label>
+
+    <label><input type="checkbox" id="duplicates" checked /> <span id="label-dup">Takrorlansinmi?</span></label>
+
+    <button id="generate">Yarat</button>
+    <button id="copy">📋 Nusxa olish</button>
+
+    <pre id="output"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
